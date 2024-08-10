@@ -7,8 +7,8 @@
 - Muhammad Rushelasli     [Github.][id/awla] 
 
 [id/rushel]: http://link-url/](#
-[id/awla]: http://link-url/](https://github.com/RivenFino
-[id/davin]: http://link-url/](https://github.com/Dawn-o
+[id/awla]: https://github.com/RivenFino
+[id/davin]: https://github.com/Dawn-o
 
 ### Preview:
 ![](https://github.com/RivenFino/Exceed-XE/blob/main/image/md/preview1.png)
