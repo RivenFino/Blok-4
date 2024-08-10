@@ -3,12 +3,12 @@
 ## Projek Akhir Kami di Kelas 10. Exceed Adalah Sebuah Web E-Commerce Yang Menjual Berbagai Jenis-Jenis Gitar.
 ### Team:
 - Davin Aleandra Wibawa   [Github.][id/davin] 
-- Muhammad Awla Ridhani   [Github.][id/rushel] 
-- Muhammad Rushelasli     [Github.][id/awla] 
+- Muhammad Awla Ridhani   [Github.][id/awla] 
+- Muhammad Rushelasli     [Github.][id/rushel] 
 
-[id/rushel]: http://link-url/](#
+[id/rushel]: https://github.com/Dawn-o
 [id/awla]: https://github.com/RivenFino
-[id/davin]: https://github.com/Dawn-o
+[id/davin]: #
 
 ### Preview:
 ![](https://github.com/RivenFino/Exceed-XE/blob/main/image/md/preview1.png)
