@@ -1,0 +1,142 @@
+/* Table */
+.table-list
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+.table-list tr
+{
+    border-bottom: 1px solid #24262b;
+}
+
+.table-list tr:hover
+{
+    background: #e5e5e5;
+}
+
+.table-list tr th,
+.table-list tr td
+{
+    padding: 14px 8px;
+}
+
+.table-list tr th:hover,
+.table-list tr td span:hover
+{
+    color: #ff0051;
+}
+
+.kolom-nomor
+{
+    width: 20px;
+    text-align: center;
+}
+
+.tengah
+{
+    text-align: center;
+}
+
+.kiri
+{
+    text-align: left;
+}
+
+/* Kategori */
+.kanan
+{
+    text-align: right;
+}
+
+#frame-tambah
+{
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.tombol-action
+{
+    background: #1e5474;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 3px;
+    font-size: 9px;
+}
+
+.tombol-action:hover
+{
+    background: #ff0051;
+}
+
+#kiri
+{
+    width: 245px;
+    height: auto;
+    float: left;
+}
+
+#menu-kategori{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 24px   ;
+}
+
+#list-kategori
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    gap: 24px;
+    padding:0 16px ;
+}
+
+#list-kategori li
+{
+    position: relative;
+    width: auto;
+    height: 25px;
+    transition: all ease-in-out 0.4s;
+}
+
+#list-kategori li:hover
+{
+    transition: all ease-in-out 0.4s;
+    transition-property: all;
+    border-bottom: 1px solid #ff0051;
+    transform: translate(0px, -2px);
+}
+
+.penuh
+{
+    width: 100%;
+}
+
+.penuh #frame-tambah
+{
+    width: 100%;
+}
+
+.penuh #frame-tambah ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    wrap: 5;
+    background: wheat
+}
+.penuh #frame-tambah ul li
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #ff0051;
+}

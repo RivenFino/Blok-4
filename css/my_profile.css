@@ -1,0 +1,237 @@
+#bg-page-profile
+{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#menu-profile
+{
+    float: left;
+    width: auto;
+    background: #24262b;
+    margin-right: 16px;
+    padding-bottom: 240px;
+}
+#menu-profile ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu-profile ul li a
+{
+    display: block;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.15s ease-in-out;
+}
+
+#menu-profile ul li a:hover
+{
+    background: #ff0051;
+}
+
+#menu-profile ul li a.active
+{
+    background: #ff0051;
+    position: relative;
+    left: 6px;
+    transition: all 0.2s ease;
+}
+
+#profile-content
+{
+    float: left;
+    width: 835px;
+    padding: 10px;
+    background: #f7f7f7;
+}
+
+/* Table */
+.table-list
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+.table-list tr
+{
+    border-bottom: 1px solid #24262b;
+}
+
+.table-list tr:hover
+{
+    background: #e5e5e5;
+}
+
+.table-list tr th,
+.table-list tr td
+{
+    padding: 14px 8px;
+}
+
+.table-list tr th:hover,
+.table-list tr td:hover
+{
+    color: #ff0051;
+}
+
+.kolom-nomor
+{
+    width: 20px;
+    text-align: center;
+}
+
+.tengah
+{
+    text-align: center;
+}
+
+.kiri
+{
+    text-align: left;
+}
+
+.width-50
+{
+    width: 50%;
+}
+
+.kanan
+{
+    text-align: right;
+}
+
+#frame-tambah
+{
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.tombol-action
+{
+    background: #1e5474;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 3px;
+    font-size: 9px;
+}
+
+.tombol-action:hover
+{
+    background: #ff0051;
+}
+
+#kiri
+{
+    width: 245px;
+    height: auto;
+    float: left;
+}
+
+/*----------form-------------*/
+
+#menu-profile form 
+{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.element-form
+{
+    margin: 12px 0;
+    text-align: start;
+    display: flex;
+    gap: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+}
+.element-form label
+{
+    width: 100px;
+    border-right: 1px solid #24262b;
+    margin-right: 16px;
+}
+
+.element-form input[type=text]
+{
+    width: 244px;
+    height: 32px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    border-bottom: 1.4px solid #24262b;
+    padding: 8px;
+    font-size: 18px;
+    text-align: start;
+    transition:all 0.5s ease;
+    transition-property: all    ;
+}
+
+.element-form input[type=text]:focus
+{
+    border: none;
+    transition: all 0.5s ease;
+    transition-property: all;
+    border-bottom: 1.4px solid #ff0051;
+    border-radius: none;
+}
+
+.element-form span
+{
+    text-align: center;
+}
+
+.element-form span input[type=radio]
+{
+    margin-left: 12px;
+}
+
+.element-form input[type=submit]
+{
+    width: 200px;
+    font-weight: 700;
+    height: 32px;
+    border-radius: 2px;
+    border: none;
+    background-color: #24262b;
+    border-bottom: 2px solid #24262b;
+    color: #f7f7f7;
+    transition: all 0.3s ease-in-out;
+}
+
+.element-form input[type=submit]:hover
+{
+    background-color: #ff0051;
+    border: none;
+    border-bottom: 2px solid #24262b;
+}
+
+/* ------------- ALERT --------------*/
+.alert 
+{
+    display: none;
+    position: absolute;
+    visibility: hidden;
+}
+
+label:hover .alert
+{
+    display: block;
+    visibility: none;
+    transition: all 1s ease;
+    top: 50%;
+
+}

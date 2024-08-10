@@ -1,0 +1,261 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family:  Arial;
+    font-size: 16px;
+    color: #13005A;
+    background: #F7F7F7;
+    margin: 0;
+}
+
+#logo2
+{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    /*-webkit-transform: scale(1.01);*/
+}
+
+header
+{
+    position: sticky;
+    top: 0;
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+button
+{
+    padding: 3px 7px;
+    border-radius: 0.3vh;
+    background-color: #24262b;
+    color: #F7F7F7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+header .logo a
+{
+    display: flex;
+    align-items: center;
+    padding: none;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin-left: 24px;
+    user-select: none;
+}
+
+@media screen and (max-width: 572px)
+{
+    header .logo a
+    {
+        margin-left: 8px;
+        font-size: 8px;
+    }
+}
+
+
+header .logo a img
+{
+    padding: 6px;
+}
+
+header .menu
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+header .menu .nav
+{
+    display: flex;
+    gap: 24px;
+}
+
+
+
+header .search
+{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    gap: 0;
+}
+
+header .search form
+{
+    display: flex;
+    width: 100%;
+}
+
+
+header .search input
+{
+    padding-left: 20px;
+    height: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    width: 100%;
+    min-width: 40px;
+}
+header .search button
+{
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+#container 
+{
+    max-width: 1225px;
+    min-width: 120px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#container #content {
+    padding: 10px 0px;
+    overflow: hidden;
+}
+.vertical-hr
+{
+    width: 2px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+
+header #user
+{
+    padding-right: 32px;
+    display: flex;
+    flex-direction: row;
+}
+
+header #user a
+{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+header #user a span
+{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header menu #button-menu span
+{
+    color: black;
+    font-weight: 500;
+}
+
+/* Modal User */
+
+
+@media screen and (max-width: 800px)
+{
+    #container 
+    {
+        max-width: 728px;
+        min-width: 512px;
+    }
+    header .menu #user a
+    {
+        display: hidden;
+        position: fixed;
+        visibility: hidden;
+        width: 0;
+    }
+    header .menu #vertical-hr
+    {
+        display: hidden;
+        position: fixed;
+        visibility: hidden;
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 514px)
+{
+    #container 
+    {
+        max-width: 514px;
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 980px)
+{
+    header .logo a
+    {
+        margin-left: 38px;
+        font-size: 12px;
+    }
+    header .search 
+    {
+        width: 50%;
+    }
+}
+
+#navigasi-menu .header-modal h4
+{
+    font-size: 8vh;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #13005A;
+}
+
+.merah 
+{
+    background: #ff0051;
+}
+
+.center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.total-barang
+{
+    color:  #ff0051;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: top;
+    cursor: pointer;
+}
+.keranjang 
+{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tombol-pink
+{
+    background-color: #ff0051;
+    border-radius: 8px;
+    text-align: center;
+}

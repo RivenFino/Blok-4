@@ -1,0 +1,78 @@
+#container-user-akses {
+    width: 350px;
+    height: auto;
+    margin: 50px auto;
+}
+
+#container-user-akses .header-akun
+{
+    align-content: center;
+}
+.element-form {
+    margin-bottom: 15px;
+}
+
+.element-form label{
+    display: block;
+    font-weight: bold;
+}
+
+.element-form span {
+    display: block;
+}
+
+.element-form span input[type="text"],
+.element-form span input[type="number"],
+.element-form span input[type="password"],
+.element-form span textarea,
+.element-form span select {
+    width: 100%;
+    height: 42px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.element-form span input[type="text"]:focus
+{
+    background: #dfdfdf;
+}
+.element-form span input[type="number"]:focus
+{
+    background: #dfdfdf;
+}
+.element-form span input[type="password"]:focus
+{
+    background: #dfdfdf;
+}
+.element-form span textarea:focus
+{
+    background: #dfdfdf;
+}
+.element-form span select:focus
+{
+    background: #dfdfdf;
+}
+
+.element-form span input[type="submit"] {
+    background: #1e5474;
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 3px;
+    font-size: 9px;
+    cursor: pointer;
+}
+
+.element-form span input[type="submit"]:hover{
+    background: #ff0051     ;
+}
+
+.notif {
+    background: #1e5474;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 11px;
+}

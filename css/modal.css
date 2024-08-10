@@ -1,0 +1,279 @@
+.overlay
+{
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+}
+a
+{
+    color: #24262b;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: start;
+    text-justify: auto;
+
+}
+.button
+{
+    border-radius: 0.5vh;
+    cursor: pointer;
+}
+
+.modal-close
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0vh;
+    font-size: 4vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 0 0.5vh 0 0 ;
+    overflow: hidden;
+    width: 100%;
+    height: 5vh;
+    z-index: 10;
+    border-radius: 2vh 0 0 0;
+}
+.modal-close span
+{
+    position: relative;
+    right: 2vh;
+    padding-right: 1vh;
+}
+.modal-close span:hover
+{
+    color: #ff0051;
+}
+
+#button-user
+{
+    cursor: pointer;
+}
+
+#modal-user .modal-close span
+{
+    cursor: pointer;
+    margin-right: 1vh;
+}
+
+header .menu .button-user #modal-user
+{
+    display: hidden;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: -10;
+    cursor: pointer;
+}
+
+.modal-popup
+{
+    position: fixed;
+    visibility: hidden;
+    display: hidden;
+    z-index: 1010;
+    width: 100%;
+    top: 0;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.1s ease;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.modal-popup.show
+{
+    transition: all 0.3s ease;
+    visibility: unset;
+    display: block;
+}
+.modal-popup .container-modal-user
+{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    min-width: 40vh;
+    min-height: 20vh;
+    top: -200vh;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    padding: 2vh 1.2vh;
+    border-left : 0.5vh solid rgba(0, 0, 0, 0.3);
+    border-right: 0.5vh solid rgba(0, 0, 0, 0.3);
+    border-radius: 1vh;
+    z-index: 2010;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 12px;
+    transition: all 0.3s ease;
+}
+.modal-popup.show .container-modal-user
+{
+    top: 50%;
+}
+.header-modal
+{
+    font-size: 3vh;
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+    align-items: center;
+    margin: 4vh 0;
+}
+
+
+.modal-popup .container-modal-user .body-modal,
+.modal-popup .container-modal-menu .body-modal
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10vh;
+    padding: 2vh 4.2vh;
+    margin-bottom: 6vh;
+}
+
+.modal-popup .container-modal-user .body-modal .button-user a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23vh;
+    height: 10vh;
+    font-size: 2vh;
+    border-radius: 0.4vh;
+    text-decoration: none;
+    font-weight: 700;
+    border-left : 1vh solid rgba(0, 0, 0, 0.24);
+    border-right: 1vh solid rgba(0, 0, 0, 0.24);
+}
+.modal-popup .container-modal-user #button-login
+{
+    background-color: #ff0051;
+    color: #F7F7F7;
+}
+.modal-popup .container-modal-user #button-register
+{
+    background-color: #24262b;
+    color: #F7F7F7;
+    border-left : 1vh solid rgba(255, 255, 255, 0.24);
+    border-right: 1vh solid rgba(255, 255, 255, 0.24);
+}
+
+@media screen and (max-width: 767px)
+{
+    /*#modal-user
+    {
+        visibility: unset;
+        display: block;
+        z-index: 1;
+        position: relative;
+        right: 20px;
+        font-size: 30px;
+        padding: 2px 6px;
+        margin-left: 28px;
+    }*/
+    .container-modal-user
+    {
+        min-width: 28vh;
+        min-height: 12vh;
+    }
+    .container-modal-user .header-modal h4
+    {
+        text-align: center;
+    }
+    .modal-close span
+    {
+        margin-right: 1.5vh;
+    }
+    .container-modal-user .body-modal
+    {
+        flex-direction: column;
+        gap: 2.5vh;
+    }
+}
+
+/*---------------Modal Menu---------------------- */
+
+#navigasi-menu.show
+{
+    visibility: unset;
+    display: block;
+}
+
+#menuToggle 
+{
+    cursor: pointer;
+    user-select: none;
+    margin-right: 30px;
+}
+
+
+
+.modal-popup .container-modal-menu
+{
+    position: absolute;/*
+    display: flex;
+    visibility: unset;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;*/
+    background: #F7F7F7;
+    height: 100%;
+    width: 40vh;
+    transform: translate(0%, -50%);
+    z-index: 10;
+    right: -100%;
+    top: 50%;
+
+    transition: 0.1s ease all;
+    font-size: 2vh;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-popup .container-modal-menu .body-modal
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+#navigasi-menu.show .container-modal-menu
+{
+    right: 0;
+}
+.modal-popup .container-modal-menu .body-modal
+{
+    width: 100%;
+}
+
+.modal-popup .container-modal-menu .body-modal ul
+{
+    width: 100%;
+}
+
+.modal-popup .container-modal-menu .body-modal ul li
+{
+    width: 100%;
+    height: 4vh;
+    font: 6vh;
+    margin-bottom: 0.3vh;
+    border-bottom: 0.3vh solid #24262b;
+    position: relative;
+}
+
+.modal-popup .container-modal-menu  .body-modal #sub-menu a
+{
+    color: #434446;
+    font-weight: 400;
+    font-size: 2vh;
+}

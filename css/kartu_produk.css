@@ -1,0 +1,136 @@
+body
+{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.katalog h3
+{
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.katalog a{
+    text-decoration: none;
+}
+
+.katalog .gallery
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.katalog .content
+{
+    width: 220px;
+    margin: 5px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0 0 20px 20px;
+    transition: 0.4s ease;
+    background: #f2f2f2;
+}
+
+.katalog .content:hover
+{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.8),
+    0 1px 1px rgba(0,0,0,0.11);
+    transform: translate(0px, -2px);
+}
+
+.katalog .content a .image
+{
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.katalog img
+{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+}
+
+.katalog p 
+{
+    text-align: center;
+    color: #747b7e;
+    padding-top: 0 8px;
+}
+
+.katalog h6
+{
+    font-size: 16px;
+    text-align: center;
+    color: #24262b;
+}
+
+.katalog button
+{
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.katalog button .harga-button
+{
+    color: #f2f2f2;
+    padding: 0;
+    transition: ease  0.24s all;
+}
+
+
+.buy-1
+{
+    background: #ff0051;
+}
+.buy-2
+{
+    background: #24262b;
+}
+.buy-3
+{
+    background: #58c25a;
+}
+.buy-4
+{
+    background: #13005A;
+}
+
+.harga-1
+{
+    color: #ff0051;
+}
+.harga-2
+{
+    color: #24262b;
+}
+.harga-3
+{
+    color: #1F8A70;
+}
+.harga-4
+{
+    color:#13005A;
+}
+

@@ -1,0 +1,233 @@
+*
+{
+    box-sizing: border-box;
+}
+
+.banner 
+{
+    margin: 12px auto;  
+}
+
+.content-slide
+{
+    margin: 0 auto;
+    max-width: 1148px;
+    position: relative;
+}
+
+.img-slide
+{
+    vertical-align: middle;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: auto;
+    padding: 16px;
+    color: rgb(255, 244, 244);
+    font-weight: bold;
+    font-size: 2.6vh;
+    transition: all 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.text
+{
+    display: flex;
+    color: black;
+    flex-direction: column;
+    text-justify: center;
+    background: #f7f7f750;
+    font-size: 15px;
+    padding: 8px 32px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.347);
+}
+.text
+
+.content-slide .numberslide
+{
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 10px;
+}
+
+
+.fade
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade
+{
+    from
+    {
+        opacity: .4;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes fade
+{
+    from
+    {
+        opacity: .4;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+#container .page
+{
+    text-align: center;
+    padding-top: 20px;
+}
+.page
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .dot
+{
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+    width: 28px;
+    height: 4px;
+    border-radius: 1vh;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 3vh;
+}
+
+.page .active,
+.page .dot:hover
+{
+    background-color: #24262b;
+    width: 28px;
+    height: 4px;
+    border-radius: 1vh;
+}
+
+    /* Responsif */
+    
+    @media screen and (min-width: 1800px)
+    {
+        .page .dot
+        {
+
+            width: 28px;
+            height: 4px;
+            border-radius: 3vh;
+        }
+    }
+    
+    @media screen and (max-width: 1268px)
+    {
+        .content-slide
+        {
+            width: 90%;
+        }
+    
+        .img-slide
+        {
+            width: 100%;
+            height: calc(30% - 44px);
+        }
+    
+        .next
+        {
+            border-radius: 3px 0 0 3px;
+        }
+    }
+    @media screen and (max-width: 768px)
+    {
+        .content-slide
+        {
+            width: 100%;
+        }
+    
+        .img-slide
+        {
+            width: 100%;
+            height: calc(38% - 36px);
+        }
+    
+        .next
+        {
+            border-radius: 3px 0 0 3px;
+        }
+    }
+    @media screen and (max-width: 590px)
+    {
+        .content-slide
+        {
+            width: 100%;
+        }
+        .img-slide
+        {
+            width: 100%;
+            height: calc(36%-12px);
+        }
+    }
+    @media screen and (max-width: 398px)
+    {
+        .content-slide
+        {
+            width: 100%;
+        }
+        .img-slide
+        {
+            width: 100%;
+            height: calc(32% - 8px);
+        }
+        .prev, .next
+        {
+            width: 1vh;
+            height: 0.4vh;
+            opacity: 0.5;
+        }
+    }

@@ -1,0 +1,29 @@
+#detail-barang
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+#detail-barang h2 
+{
+    color: #24262b;
+    margin: 10px 0;
+}
+
+#detail-barang #frame-gambar 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+#detail-barang #frame-gambar img
+{
+    width: 588px;
+    height: 588px;
+    background-position: center center;
+}

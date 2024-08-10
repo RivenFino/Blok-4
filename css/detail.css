@@ -1,0 +1,62 @@
+.grey
+{
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 0 0 40px 40px;
+}
+#detail-barang 
+{
+    margin: 32px 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+#detail-barang h2
+{
+    justify-content: center;
+    align-items: center;
+    float: center;
+    text-align: center;
+    margin: 12px 0;
+    color: #24262b;
+}
+
+#detail-barang #frame-gambar #gambar
+{
+    height: 600px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    object-fit: contain;
+}
+
+#frame-harga
+{
+    display: flex;
+    justify-content: center;
+    padding: 4px 0;
+}
+.box-1
+{
+    padding: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.1);
+    width: 600px;
+    border-radius: 0 0 12px 12px;
+}
+
+.tombol-pink
+{
+    background-color: #ff0051;
+    border-radius: 12px;
+    text-align: center;
+    padding: 6px 10px;
+    color: white;
+}
+
+.tombol-pink:hover
+{
+    background-color: #9b0031;
+}
