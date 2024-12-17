@@ -1,5 +1,9 @@
-![](https://github.com/RivenFino/Exceed-XE/blob/main/image/logo/exceed-logo%201.svg) 
-![](https://github.com/RivenFino/Exceed-XE/blob/main/image/logo/exceed-title%201.svg)
+<p>
+  <img src="https://github.com/RivenFino/Exceed-XE/blob/main/image/logo/exceed-logo%201.svg" width="100" />
+  <img src="https://github.com/RivenFino/Exceed-XE/blob/main/image/logo/exceed-title%201.svg" width="300" />
+</p>
+
+
 ## Our Last Projek at 10 Class. Exceed is an ecommerce site that sells all kinds of guitars.
 ### Team:
 - Davin Aleandra Wibawa   [Github.][id/davin] 
